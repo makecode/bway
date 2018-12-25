@@ -1,0 +1,58 @@
+.btn
+  display: flex
+  justify-content: center
+  padding: 0 15px
+  height: 35px
+  line-height: 35px
+  text-transform: uppercase
+  border-radius: 0
+  background-color: #000
+  border: 1px solid #000
+  cursor: pointer
+  color: #fff
+  box-sizing: border-box
+  transition: all .3s ease-in-out
+  +bold
+
+  &:hover
+    background-color: $green
+    border-color: $green
+    color: #fff
+
+//.btn-buy
+//  display: inline-block
+//  position: relative
+//  padding: 15px 10px 10px
+//  min-width: 150px
+//  height: 54px
+//  background-color: #000
+//  border: 1px solid #000
+//  color: #fff
+//  font-size: 18px
+//  transition: all .3s ease-in-out
+//  cursor: pointer
+//  +bold
+//
+//  &:hover
+//    background-color: $green
+//    border-color: $green
+//    color: #fff
+
+.btn-prev,
+.btn-next
+  display: block
+  width: 18px
+  height: 40px
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  cursor: pointer
+
+.btn-prev
+  left: -25px
+
+.btn-next
+  right: -25px
+
+.owl-carousel .owl-nav.disabled, .owl-carousel .owl-dots.disabled
+  display: block

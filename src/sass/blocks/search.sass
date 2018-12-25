@@ -1,0 +1,61 @@
+.search
+  width: 200px
+  position: relative
+  cursor: text
+  transition: all .3s ease-in-out
+
+  &:hover
+
+    .search__input
+      padding: 0 10px
+      width: calc(100% - 30px)
+      border: 1px solid #d6d6d6
+
+    .search__btn
+      background-color: $green
+
+  &__form
+    display: flex
+    flex-wrap: nowrap
+    flex-direction: row
+    align-items: center
+    width: 100%
+
+  &__input
+    position: absolute
+    //top: 0
+    right: 30px
+    display: block
+    padding: 0
+    width: 0
+    border: 0
+    height: 30px
+    line-height: 30px
+    font-size: 15px
+    letter-spacing: -.3px
+    box-sizing: border-box
+    transition: all .3s ease-in-out
+    border-radius: 0
+
+    &:focus
+      border-radius: 0
+      outline: none
+
+    &:focus ~ .search__btn
+      background-color: $green
+
+  &__btn
+    display: inline-block
+    position: absolute
+    //top: 0
+    right: 0
+    padding: 0
+    width: 30px
+    height: 30px
+    border: none
+    box-sizing: border-box
+    cursor: pointer
+
+    .icon
+      font-size: 18px
+      color: $text

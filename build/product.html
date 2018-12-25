@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+  <title>Bhakti Way</title>
+  <script src="js/app.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrap">
+        <div class="header__top">
+          <div class="header__left">
+            <div class="logo">
+              <a class="logo__link" href="/">
+                <img class="logo__img" src="img/logo.png" alt="BhaktiWay logo">
+                <span class="logo__name">BhaktiWay</span>
+              </a>
+            </div>
+          </div>
+          <div class="header__right">
+            <div class="search">
+              <form action="#" class="search__form">
+                <button class="search__btn">
+                  <span class="icon icon-search"></span>
+                </button>
+                <input type="text" class="search__input">
+              </form><!-- end search -->
+            </div>
+            <nav class="nav">
+              <a href="contacts.html" class="nav__link">Контакты</a>
+              <!--<a class="nav__link" href="tel:+38(050)823-03-24">-->
+                <!--<span class="icon icon-phone"></span>-->
+                <!--<span>-->
+                  <!--+38(050)823-03-24-->
+                <!--</span>-->
+              <!--</a>-->
+              <a href="delivery.html" class="nav__link">Оплата и доставка</a>
+              <a href="https://www.facebook.com/BhaktiWay/" target="_blank" class="nav__link">Facebook</a>
+            </nav>
+            <div class="cart">
+              <span class="icon icon-cart"></span>
+            </div>
+          </div><!-- end header__right -->
+        </div><!-- end header__top -->
+        <div class="header__bottom">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__el">
+                <a href="#" class="menu__link">Главная</a>
+              </li>
+              <li class="menu__el">
+                <a href="#" class="menu__link">Аювердические препараты</a>
+                <div class="dropdown">
+                  <ul class="dropdown__list">
+                    <li class="dropdown__el">
+                      <a href="#" class="dropdown__link">Сердечно-сосудистая система</a>
+                    </li>
+                    <li class="dropdown__el">
+                      <a href="#" class="dropdown__link">Нервная система</a>
+                    </li>
+                    <li class="dropdown__el">
+                      <a href="#" class="dropdown__link">Дыхательная система</a>
+                    </li>
+                    <li class="dropdown__el">
+                      <a href="#" class="dropdown__link">Иммунная система</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="menu__el">
+                <a href="#" class="menu__link">Ароматерапия</a>
+              </li>
+              <li class="menu__el">
+                <a href="#" class="menu__link">Травы</a>
+              </li>
+              <li class="menu__el">
+                <a href="#" class="menu__link">Питание</a>
+              </li>
+              <li class="menu__el">
+                <a href="#" class="menu__link">Книги</a>
+              </li>
+            </ul>
+          </nav>
+        </div><!-- end header__bottom -->
+      </div><!-- end header__wrap -->
+    </div><!-- end container -->
+  </header>
+  <main class="main">
+    <div class="container">
+      <div class="section">
+        <div class="product">
+          <div class="product__left">
+            <img class="product__img" src="https://cdn.shopify.com/s/files/1/0020/3613/8073/products/2_bda18db7-7403-437b-b24c-5baf0392e011_1024x1024@2x.jpg?v=1534248817" alt="product_img">
+          </div>
+          <div class="product__right">
+            <div class="info">
+              <span class="info__title">Трифала Хималая / 60 таб.</span>
+              <div class="product__list">
+                <dl>
+                  <dt>Артикул:</dt>
+                  <dd>001</dd>
+                </dl>
+                <dl>
+                  <dt>Наличие:</dt>
+                  <dd>В наличии</dd>
+                </dl>
+                <dl>
+                  <dt>Фирма производитель:</dt>
+                  <dd>Maharishi Ayurveda Products Pvt.</dd>
+                </dl>
+                <dl>
+                  <dt>Страна производитель:</dt>
+                  <dd>Индия</dd>
+                </dl>
+                <dl>
+                  <dt>Упаковка:</dt>
+                  <dd>60 таблеток</dd>
+                </dl>
+                <dl>
+                  <dt>Срок годности:</dt>
+                  <dd>до 09.2019 года</dd>
+                </dl>
+              </div><!-- end product__list -->
+              <div class="info__price">
+                <span class="price is-old">230 грн</span>
+                <span class="price">160 грн</span>
+              </div>
+              <div class="product__action">
+                <div class="form">
+                  <form method="post" class="form__cart">
+                    <div class="quantity">
+                      <span class="quantity__text">Количество:</span>
+                      <input type="number" min="1" max="9" step="1" value="1">
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="product__btn">
+                <button type="submit" class="btn-buy">В корзину</button>
+              </div>
+            </div><!-- end info -->
+          </div>
+        </div><!-- end product -->
+        <div class="tabs">
+          <ul class="tabs__list">
+            <li class="tabs__el is-active">Описание</li>
+            <li class="tabs__el">Показания</li>
+            <li class="tabs__el">Способ применения</li>
+            <li class="tabs__el">Состав</li>
+          </ul>
+          <ul class="tabs__content-list">
+            <li class="tabs__content is-visible">
+              <div class="info">
+                <p class="info__text">
+                  Restone (Рестон) помогает пациентам адаптироваться к стрессовым условиям и предотвратить эмоциональные
+                  изменения, такие как беспокойство, депрессия и раздражительность. Препарат быстро восстанавливает тонус тела и
+                  восстанавливает психические функции и равновесие, полезен женщинам всех возрастов с момента полового
+                  созревания, до и после менопаузы.
+                </p>
+              </div>
+            </li>
+            <li class="tabs__content">
+              <div class="info">
+                <ul class="list">
+                  <li class="list__el">
+                    - Общеукрепляющий тоник для женщин
+                  </li>
+                  <li class="list__el">
+                    - Для облегчения предменструального синдрома
+                  </li>
+                  <li class="list__el">
+                    - Вспомогательное средство при лечении заболеваний мочеполовой системы
+                  </li>
+                  <li class="list__el">
+                    - Профилактическая терапия для лечения заболеваний мочеполовой системы
+                  </li>
+                  <li class="list__el">
+                    - Как восстановительный тоник во время пубертатного периода
+                  </li>
+                  <li class="list__el">
+                    - Синдром менопаузы
+                  </li>
+                  <li class="list__el">
+                    - Климактерический синдром
+                  </li>
+                </ul>
+              </div><!-- end info -->
+            </li>
+            <li class="tabs__content">
+              <div class="info">
+                <span>Способ применения:</span>
+                <p class="info__descr">По 1-2 таблетки в день после еды или по указанию врача.</p>
+              </div>
+            </li>
+            <li class="tabs__content">
+              <div class="info">
+                <ul class="list">
+                  <li class="list__el">Saraca asoca (Ashok) 100mg</li>
+                  <li class="list__el">Symplocos racemosa (Lodhra) 50mg</li>
+                  <li class="list__el">Asparagus racemosus (Shatavari) 25mg</li>
+                  <li class="list__el">Mangifera indica (Aam) 25mg</li>
+                  <li class="list__el">Ficus religiosa (Peepal ) 25mg</li>
+                  <li class="list__el">Mimosa pudica (Lajwanti) 25mg</li>
+                  <li class="list__el">Boerhaavia diffusa (Punarnava) 25mg</li>
+                  <li class="list__el">Caesalpinia sappan (Patang) 25mg</li>
+                  <li class="list__el">Messua ferrea (Nagkesar) 12.5mg</li>
+                  <li class="list__el">Valeriana wallichi (Sugandh Bala) 12.5mg</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div><!-- end tabs -->
+      </div><!-- end container -->
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrap">
+        <div class="footer__left">
+          <div class="logo is-footer">
+            <a href="index.html" class="logo__link">
+              <img class="logo__img" src="img/logo.png" alt="logo_bhakti_way">
+              <span class="logo__name">BhaktiWay</span>
+            </a>
+          </div>
+          <div class="copyright">© 2018.</div>
+        </div>
+        <div class="footer__right">
+          <nav class="nav">
+            <a href="#" class="nav__link">Контакты</a>
+            <a href="#" class="nav__link">Оплата и доставка</a>
+            <a href="https://www.facebook.com/BhaktiWay/" target="_blank" class="nav__link">Facebook</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>

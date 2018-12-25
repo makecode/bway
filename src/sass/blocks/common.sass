@@ -1,0 +1,149 @@
+//write here your sass
++font(roboto-light, roboto-light)
++font(roboto-regular, roboto-regular)
++font(roboto-bold, roboto-bold)
++font-icon(bhaktiway, bhaktiway)
+
+=light
+  //font-family: 'Open Sans', Helvetica, Arial, sans-serif
+  font-family: 'Roboto Condensed', sans-serif
+  font-weight: 300
+
+=regular
+  //font-family: 'Open Sans', Helvetica, Arial, sans-serif
+  font-family: 'Roboto Condensed', sans-serif
+  font-weight: 400
+
+=bold
+  //font-family: 'Open Sans', Helvetica, Arial, sans-serif
+  font-family: 'Roboto Condensed', sans-serif
+  font-weight: 700
+
+$text: #2e1532
+$textGrey: #767477
+$purple: #a4aeff
+$green: #2fad4a
+
+html
+  background-color: #f2f2f2
+
+body
+  padding-top: 30px
+  display: flex
+  flex-direction: column
+  min-width: 1110px
+  font-size: 15px
+  line-height: 1.2
+  color: $text
+  +regular
+
+a
+  color: #3f8ad5
+  display: inline-block
+  text-decoration: none
+  cursor: pointer
+  transition: all .3s ease-in-out
+
+  &:hover
+    text-decoration: none
+    color: $green
+
+  &:active,
+  &:focus,
+  &:visited
+    text-decoration: none
+
+img
+  display: inline-block
+  max-width: 100%
+  height: auto
+
+h1
+  font-size: 40px
+
+h2
+  font-size: 30px
+
+h3
+  font-size: 20px
+  text-transform: uppercase
+
+h5
+  font-size: 14px
+  text-transform: uppercase
+
+.bold
+  font-weight: bold
+
+.carousel
+  margin: 20px 0
+
+.input
+  width: 100%
+  height: 25px
+  line-height: 25px
+  box-sizing: border-box
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+  -webkit-appearance: none
+  margin: 0
+
+.copyright
+  font-size: 11px
+  +light
+
+.info
+  margin-top: 20px
+
+.icon
+  position: relative
+  vertical-align: middle
+  color: inherit
+
+.contact
+  margin-bottom: 20px
+
+  &__descr
+    margin-bottom: 5px
+
+  &__link
+    margin-bottom: 5px
+    color: $text
+
+.sidebar
+  padding-right: 50px
+  min-width: 300px
+  border-right: 1px solid #8c8c8c
+  box-sizing: border-box
+
+.breadcrumbs
+  padding: 40px 0
+  text-align: center
+  background-color: #f8f8f8
+
+  &__title
+    font-size: 24px
+
+.categories
+  padding-left: 50px
+
+  &__descr
+    color: #8c8c8c
+    line-height: 20px
+
+.delivery
+  margin-bottom: 30px
+
+  &__title
+    font-weight: bold
+    text-transform: capitalize
+
+.form
+  display: flex
+  flex-direction: column
+
+  &__cart
+    display: flex
+    justify-content: space-between
+    align-items: center
