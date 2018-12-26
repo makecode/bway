@@ -6,8 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">-->
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/app.css">
   <title>Bhakti Way</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="js/app.js"></script>
 </head>
 <body>
@@ -24,7 +28,7 @@
             </div>
           </div>
           <div class="header__right">
-            <div class="search">
+            <div class="search" id="search">
               <form action="#" class="search__form">
                 <button class="search__btn">
                   <span class="icon icon-search"></span>
@@ -94,22 +98,22 @@
   <main class="main">
     <div class="container">
       <section class="section">
-        <h3 class="section__title">Способы доставки</h3>
-        <div class="delivery-info">
-          <div class="delivery">
-            <h5 class="delivery__title">Новая Почта</h5>
-            <p class="delivery__descr">Доставка осуществляется в указанное вами отделение Новой Почты в вашем городе.</p>
-            <p class="delivery__descr">Возможна адресная доставка Новой Почты, в указанный вами почтовый адрес.</p>
-            <p class="delivery__descr">Время доставки - 1-3 дня. Стоимость доставки – по тарифам перевозчика.</p>
-            <p class="delivery__descr">Оплата доставки производится при получении товара.</p>
+          <h3 class="section__title">Способы доставки</h3>
+          <div class="delivery-info">
+            <div class="delivery">
+              <h5 class="delivery__title">Новая Почта</h5>
+              <p class="delivery__descr">Доставка осуществляется в указанное вами отделение Новой Почты в вашем городе.</p>
+              <p class="delivery__descr">Возможна адресная доставка Новой Почты, в указанный вами почтовый адрес.</p>
+              <p class="delivery__descr">Время доставки - 1-3 дня. Стоимость доставки – по тарифам перевозчика.</p>
+              <p class="delivery__descr">Оплата доставки производится при получении товара.</p>
+            </div>
+            <div class="delivery">
+              <h3 class="section__title">Способы оплаты</h3>
+              <h5 class="delivery__title">Безналичный расчет</h5>
+              <p class="delivery__descr">100% предоплата</p>
+            </div>
           </div>
-          <div class="delivery">
-            <h3 class="section__title">Способы оплаты</h3>
-            <h5 class="delivery__title">Безналичный расчет</h5>
-            <p class="delivery__descr">100% предоплата</p>
-          </div>
-        </div>
-      </section>
+        </section>
     </div>
   </main>
   <footer class="footer">

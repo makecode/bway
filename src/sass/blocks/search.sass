@@ -1,20 +1,19 @@
 .search
   width: 200px
   position: relative
+  right: -30px
   cursor: text
   transition: all .3s ease-in-out
 
-  &:hover
+  &.opened
 
     .search__input
-      padding: 0 10px
-      width: calc(100% - 30px)
-      border: 1px solid #d6d6d6
-
-    .search__btn
-      background-color: $green
+      width: 100%
+      visibility: visible
+      border-color: #d6d6d6
 
   &__form
+    position: relative
     display: flex
     flex-wrap: nowrap
     flex-direction: row
@@ -25,35 +24,40 @@
     position: absolute
     right: 30px
     display: block
-    padding: 0
+    padding: 0 25px 0 10px
     width: 0
-    border: 0
+    border: 1px solid transparent
     height: 30px
     line-height: 30px
     font-size: 15px
     letter-spacing: -.3px
     box-sizing: border-box
-    transition: all .3s ease-in-out
     border-radius: 0
+    transition: all .3s ease-in-out
+    visibility: hidden
 
     &:focus
       border-radius: 0
       outline: none
 
-    &:focus ~ .search__btn
-      background-color: $green
-
   &__btn
     display: inline-block
     position: absolute
-    right: 0
+    right: 40px
     padding: 0
-    width: 30px
+    //width: 30px
     height: 30px
-    border: none
+    border: transparent
+    background-color: transparent
     box-sizing: border-box
     cursor: pointer
+    z-index: 2
+
+    &:focus,
+    &:active
+      outline: none
 
     .icon
       font-size: 18px
+      line-height: 0
       color: $text

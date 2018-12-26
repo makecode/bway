@@ -32,6 +32,8 @@ body
   display: flex
   flex-direction: column
   min-width: 1110px
+  height: auto
+  min-height: 100%
   font-size: 15px
   line-height: 1.2
   color: $text
@@ -69,7 +71,7 @@ h3
   text-transform: uppercase
 
 h5
-  font-size: 14px
+  font-size: 16px
   text-transform: uppercase
 
 .bold
@@ -136,8 +138,9 @@ input::-webkit-inner-spin-button
   margin-bottom: 30px
 
   &__title
-    font-weight: bold
+    margin-bottom: 5px
     text-transform: capitalize
+    +bold
 
 .form
   display: flex
@@ -147,3 +150,9 @@ input::-webkit-inner-spin-button
     display: flex
     justify-content: space-between
     align-items: center
+
+body.without-header
+  padding-top: 111px
+
+main.without-header
+  padding-top: 78px
